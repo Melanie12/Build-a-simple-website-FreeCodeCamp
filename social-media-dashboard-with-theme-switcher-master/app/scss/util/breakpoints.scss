@@ -1,0 +1,32 @@
+/*Breakpoints are the building blocks of responsive design. Use them to control when your layout can be adapted at a particular viewport or device size.
+Use media queries to architect your CSS by breakpoint. Media queries are a feature of CSS that allow you to conditionally apply styles based on a set of browser and operating system parameters. We most commonly use min-width in our media queries.
+Mobile first, responsive design is the goal. Bootstrap’s CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors */
+
+
+/*A mixin is a class  in which some or all of its methods and/or properties are unimplemented, requiring that another class or interface provide the missing implementations. */
+
+// 640px, 1150px, 1400px
+$breakpoints-up: (
+	'medium': '40em',
+	'large': '71.875em',
+	'xlarge': '87.5em',
+);
+
+// 639px, 1149px, 1399px
+$breakpoints-down: (
+	'small': '39.9375em',
+	'medium': '71.8125em',
+	'large': '87.4375em',
+);
+
+@mixin breakpoint($size) {
+	@media (min-width: map-get($breakpoints-up, $size)) {
+		@content;
+	}
+}
+
+@mixin breakpoint-down($size) {
+	@media (max-width: map-get($breakpoints-down, $size)) {
+		@content;
+	}
+}
