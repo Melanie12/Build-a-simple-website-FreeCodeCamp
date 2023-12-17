@@ -10,6 +10,8 @@ Light/Dark mode toggle
   https://codepen.io/renddrew/pen/bRomab
 
 CSS variables
+https://css-tricks.com/updating-a-css-variable-with-javascript/
+
 Prefers-color-scheme media query
 
 Accessibility
