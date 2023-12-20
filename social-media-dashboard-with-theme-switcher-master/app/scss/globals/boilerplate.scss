@@ -1,6 +1,10 @@
+/*Boiler plate includes a lot of default styles.*/
+
 html {
   font-size: 100%
+  /*jess said that this font-size helped for accessibility */
   box-sizing: border-box;
+  /* jess said this ensures that if you add padding to an element, the total width is going to include the padding, not be an addition to the padding*/
 }
 
 *, *::before, *::after {

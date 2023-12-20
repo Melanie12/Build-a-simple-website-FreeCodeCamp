@@ -1,5 +1,6 @@
 h1, h2, h3{
   margin-top:0;
+  /* Browser default adds a margin on the top and the bottom. Jess likes to set this one to 0 and set the bottom margins later.*/
 }
 
 a, a:visited, a:active{
