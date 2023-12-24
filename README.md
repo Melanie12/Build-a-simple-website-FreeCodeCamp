@@ -18,3 +18,11 @@ Accessibility
 - Use correct heading tags
 - Screenreader-only text for card titles and usermanes
 - toggle
+
+App folder stores javascript and Sass files.
+Sass gives more power in terms of organizations and making things easier for you as you're writing styles.
+Util folder is for utilities styles.
+_index.css files will load other files.
+
+Mixin will basically load reusable code that you want to use multiple times in your codebase.
+Use of CSS variables for each color.
