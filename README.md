@@ -26,3 +26,8 @@ _index.css files will load other files.
 
 Mixin will basically load reusable code that you want to use multiple times in your codebase.
 Use of CSS variables for each color.
+Dist is where we're going to put our compiled CSS
+
+The attribute defer in script js allows to keep the script in the head.
+
+Browsers can't read Sass files, so you have to use some kind of tool, a build tool to compile or convert your SaSS files to CSS.
